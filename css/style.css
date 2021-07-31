@@ -391,7 +391,7 @@ img {
 }
 
 /* common end */
-main {
+.slider__container {
   position: relative;
   z-index: 1;
   display: -webkit-box;
@@ -402,8 +402,13 @@ main {
 }
 
 .left__slider {
+  position: relative;
   width: 30%;
   height: 100%;
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
 }
 
 .left__slider .slider__item {
@@ -452,6 +457,10 @@ main {
 .right__slider {
   width: 70%;
   background: #000;
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
 }
 
 .right__slider .cat__item {
