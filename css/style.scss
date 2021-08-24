@@ -56,11 +56,17 @@ img {
 
 }
 
+.animation  {
+    .left__slider,
+    .right__slider {
+        transition: transform 0.5s;
+    }
+}
+
 .left__slider {
     position: relative;
     width: 30%;
     height: 100%;
-    transition: transform 0.5s;
 
     .slider__item {
         display: flex;
@@ -100,7 +106,6 @@ img {
 .right__slider {
     width: 70%;
     background: #000;
-    transition: transform 0.5s;
 
     .cat__item {
         background: url(../img/cat.jpg) no-repeat center center;
